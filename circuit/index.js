@@ -35,7 +35,10 @@ import circuit from "./target/circuit.json"
          show("logs", "Generated proof... ✅");
          show("results", proof.proof);
                  
-         // noir goes here
+         show('logs', 'Verifying proof... ⌛');
+        const isValid = await backend.verifyProof(proof);
+        show("logs", `Proof is ${isValid ? "valid" : "invalid"}... ✅`);
+         
         } catch {
          show("logs", "Oh 💔");
         }
