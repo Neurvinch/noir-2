@@ -1,6 +1,6 @@
 import { UltraHonkBackend} from "@aztec/bb.js";
 import { Noir } from "@noir-lang/noir_js";
-import circuit from "./circuit/target/circuit.json"
+import circuit from "./target/circuit.json"
 
 
 const show = (id, content) => {
