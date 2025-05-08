@@ -1,7 +1,11 @@
 {
-    "name": "noir-project",
-    "version": "1.0.0",
-    "main": "index.js",
-    "license": "MIT"
+  "name": "circuit",
+  "packageManager": "yarn@4.9.1",
+  "devDependencies": {
+    "vite": "^6.3.5"
+  },
+  "dependencies": {
+    "@aztec/bb.js": "^0.86.0",
+    "@noir-lang/noir_js": "1.0.0-beta.3"
   }
-  
+}
